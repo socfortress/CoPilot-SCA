@@ -31,6 +31,136 @@
       "app_version": "10",
       "platform": "windows",
       "cis_version": "1.2.0"
+    },
+    {
+      "id": "cis_mysql_community_deb",
+      "name": "CIS Oracle MySQL Community Server 5.6 - Debian",
+      "description": "CIS Benchmark for Oracle MySQL Community Server 5.6 on Debian-based Linux (Ubuntu, Debian)",
+      "file": "policies/mysql/cis_mysql_community_deb.yml",
+      "application": "mysql",
+      "app_version": "5.6",
+      "platform": "linux-deb",
+      "cis_version": "1.1.0"
+    },
+    {
+      "id": "cis_mysql_community_rpm",
+      "name": "CIS Oracle MySQL Community Server 5.6 - RPM",
+      "description": "CIS Benchmark for Oracle MySQL Community Server 5.6 on RPM-based Linux (RHEL, CentOS, Rocky Linux)",
+      "file": "policies/mysql/cis_mysql_community_rpm.yml",
+      "application": "mysql",
+      "app_version": "5.6",
+      "platform": "linux-rpm",
+      "cis_version": "1.1.0"
+    },
+    {
+      "id": "cis_mysql_enterprise_deb",
+      "name": "CIS Oracle MySQL Enterprise Edition 5.6 - Debian",
+      "description": "CIS Benchmark for Oracle MySQL Enterprise Edition 5.6 on Debian-based Linux (Ubuntu, Debian)",
+      "file": "policies/mysql/cis_mysql_enterprise_deb.yml",
+      "application": "mysql",
+      "app_version": "5.6",
+      "platform": "linux-deb",
+      "cis_version": "1.1.0"
+    },
+    {
+      "id": "cis_mysql_enterprise_rpm",
+      "name": "CIS Oracle MySQL Enterprise Edition 5.6 - RPM",
+      "description": "CIS Benchmark for Oracle MySQL Enterprise Edition 5.6 on RPM-based Linux (RHEL, CentOS, Rocky Linux)",
+      "file": "policies/mysql/cis_mysql_enterprise_rpm.yml",
+      "application": "mysql",
+      "app_version": "5.6",
+      "platform": "linux-rpm",
+      "cis_version": "1.1.0"
+    },
+    {
+      "id": "cis_nginx_1_deb",
+      "name": "CIS NGINX 1.14.0 - Debian",
+      "description": "CIS Benchmark for NGINX 1.14.0 on Debian-based Linux (Ubuntu, Debian)",
+      "file": "policies/nginx/cis_nginx_1_deb.yml",
+      "application": "nginx",
+      "app_version": "1.14.0",
+      "platform": "linux-deb",
+      "cis_version": "1.0.0"
+    },
+    {
+      "id": "cis_nginx_1_rpm",
+      "name": "CIS NGINX 1.14.0 - RPM",
+      "description": "CIS Benchmark for NGINX 1.14.0 on RPM-based Linux (RHEL, CentOS, Rocky Linux)",
+      "file": "policies/nginx/cis_nginx_1_rpm.yml",
+      "application": "nginx",
+      "app_version": "1.14.0",
+      "platform": "linux-rpm",
+      "cis_version": "1.0.0"
+    },
+    {
+      "id": "cis_postgresql_deb",
+      "name": "CIS PostgreSQL 13 - Debian",
+      "description": "CIS Benchmark for PostgreSQL 13 on Debian-based Linux (Ubuntu, Debian)",
+      "file": "policies/postgresql/cis_postgresql_deb.yml",
+      "application": "postgresql",
+      "app_version": "13",
+      "platform": "linux-deb",
+      "cis_version": "1.0.0"
+    },
+    {
+      "id": "cis_postgresql_rpm",
+      "name": "CIS PostgreSQL 13 - RPM",
+      "description": "CIS Benchmark for PostgreSQL 13 on RPM-based Linux (RHEL, CentOS, Rocky Linux)",
+      "file": "policies/postgresql/cis_postgresql_rpm.yml",
+      "application": "postgresql",
+      "app_version": "13",
+      "platform": "linux-rpm",
+      "cis_version": "1.0.0"
+    },
+    {
+      "id": "cis_sqlserver_2012_win",
+      "name": "CIS Microsoft SQL Server 2012 - Windows",
+      "description": "CIS Benchmark for Microsoft SQL Server 2012 on Windows Server",
+      "file": "policies/sql/cis_sqlserver_2012_win.yml",
+      "application": "sqlserver",
+      "app_version": "2012",
+      "platform": "windows",
+      "cis_version": "1.5.0"
+    },
+    {
+      "id": "cis_sqlserver_2014_win",
+      "name": "CIS Microsoft SQL Server 2014 - Windows",
+      "description": "CIS Benchmark for Microsoft SQL Server 2014 on Windows Server",
+      "file": "policies/sql/cis_sqlserver_2014_win.yml",
+      "application": "sqlserver",
+      "app_version": "2014",
+      "platform": "windows",
+      "cis_version": "1.4.0"
+    },
+    {
+      "id": "cis_sqlserver_2016_win",
+      "name": "CIS Microsoft SQL Server 2016 - Windows",
+      "description": "CIS Benchmark for Microsoft SQL Server 2016 on Windows Server",
+      "file": "policies/sql/cis_sqlserver_2016_win.yml",
+      "application": "sqlserver",
+      "app_version": "2016",
+      "platform": "windows",
+      "cis_version": "1.3.0"
+    },
+    {
+      "id": "cis_sqlserver_2017_win",
+      "name": "CIS Microsoft SQL Server 2017 - Windows",
+      "description": "CIS Benchmark for Microsoft SQL Server 2017 on Windows Server",
+      "file": "policies/sql/cis_sqlserver_2017_win.yml",
+      "application": "sqlserver",
+      "app_version": "2017",
+      "platform": "windows",
+      "cis_version": "1.1.0"
+    },
+    {
+      "id": "cis_sqlserver_2019_win",
+      "name": "CIS Microsoft SQL Server 2019 - Windows",
+      "description": "CIS Benchmark for Microsoft SQL Server 2019 on Windows Server",
+      "file": "policies/sql/cis_sqlserver_2019_win.yml",
+      "application": "sqlserver",
+      "app_version": "2019",
+      "platform": "windows",
+      "cis_version": "1.1.0"
     }
   ]
 }

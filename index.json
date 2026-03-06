@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-03-06",
+  "policies": [
+    {
+      "id": "cis_apache_24_rpm",
+      "name": "CIS Apache HTTP Server 2.4 - RPM",
+      "description": "CIS Benchmark for Apache 2.4 on RPM-based Linux (RHEL, CentOS, Rocky Linux)",
+      "file": "policies/apache/cis_apache_24_rpm.yml",
+      "application": "apache",
+      "app_version": "2.4",
+      "platform": "linux-rpm",
+      "cis_version": "1.5.0"
+    },
+    {
+      "id": "cis_apache_24_deb",
+      "name": "CIS Apache HTTP Server 2.4 - Debian",
+      "description": "CIS Benchmark for Apache 2.4 on Debian-based Linux (Ubuntu, Debian)",
+      "file": "policies/apache/cis_apache_24_deb.yml",
+      "application": "apache",
+      "app_version": "2.4",
+      "platform": "linux-deb",
+      "cis_version": "1.5.0"
+    },
+    {
+      "id": "cis_iis_10_win",
+      "name": "CIS IIS 10 - Windows",
+      "description": "CIS Benchmark for IIS 10 on Windows Server",
+      "file": "policies/iis/cis_iis_10_win.yml",
+      "application": "iis",
+      "app_version": "10",
+      "platform": "windows",
+      "cis_version": "1.2.0"
+    }
+  ]
+}
+```
+
+---
+
+## Platform values to standardize on
+
+| Platform | `platform` value |
+|---|---|
+| Linux RPM-based | `linux-rpm` |
+| Linux Debian-based | `linux-deb` |
+| Windows | `windows` |
+| macOS | `macos` |
+
+---
+
+## How FastAPI queries this
+
+Your app fetches `index.json` once (cache it), then filters in-memory:
+```
+GET /policies?application=apache              → all apache entries
+GET /policies?application=apache&platform=linux-rpm  → apache RPM only
+GET /policies?platform=windows                → all Windows policies
+GET /policies/{id}                            → metadata for one policy
+GET /policies/{id}/raw                        → proxies the raw YAML file

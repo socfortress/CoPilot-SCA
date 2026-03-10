@@ -164,27 +164,3 @@
     }
   ]
 }
-```
-
----
-
-## Platform values to standardize on
-
-| Platform | `platform` value |
-|---|---|
-| Linux RPM-based | `linux-rpm` |
-| Linux Debian-based | `linux-deb` |
-| Windows | `windows` |
-| macOS | `macos` |
-
----
-
-## How FastAPI queries this
-
-Your app fetches `index.json` once (cache it), then filters in-memory:
-```
-GET /policies?application=apache              → all apache entries
-GET /policies?application=apache&platform=linux-rpm  → apache RPM only
-GET /policies?platform=windows                → all Windows policies
-GET /policies/{id}                            → metadata for one policy
-GET /policies/{id}/raw                        → proxies the raw YAML file
